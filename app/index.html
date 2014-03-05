@@ -20,6 +20,15 @@
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
 
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map-canvas { height: 100% }
+        </style>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl0cqPoMFMBL1Wdve96MbCvNusIni5Ubw&sensor=false"
+          type="text/javascript"></script>
+
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -38,9 +47,7 @@
             </div>
 
             <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+              <div id="map-canvas" style="width: 100%; height: 500px;"></div>
             </div>
 
             <div class="row marketing">
@@ -52,6 +59,12 @@
             </div>
 
         </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false"   type="text/javascript"></script>
+
+
+        
+
 
 
         <!-- build:js scripts/vendor.js -->
